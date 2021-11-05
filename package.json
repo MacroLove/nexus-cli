@@ -1,0 +1,22 @@
+{
+  "name": "ztb-tool-nexus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pkg index.js -t node12-win -o nexuscli.exe"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "commander": "^4.0.0"
+  },
+  "devDependencies": {
+    "pkg": "^5.4.1"
+  },
+  "pkg": {
+    "scripts": "index.js",
+    "assets": "",
+    "targets": [ "node14-win" ],
+    "outputPath": "dist"
+  }
+}
